@@ -1,12 +1,10 @@
 # Wumpus World: a hard-coded policy and a learned one
 
-Computational Intelligence · Politecnico di Torino · [Your name] ([student ID])
+Computational Intelligence · Politecnico di Torino · Giovannni Pantano (s362243)
 
 ## 🎥 Video presentation
 
-**[Watch the video on Google Drive](https://drive.google.com/PASTE-YOUR-LINK-HERE)** (about 12 minutes)
-
-The video presents the problem, the two solutions and the results, using the slides in [`slides.pdf`](slides.pdf).
+**[Watch the video on Google Drive](https://drive.google.com/PASTE-YOUR-LINK-HERE)**
 
 ## The problem
 
@@ -56,24 +54,4 @@ The agent starts with **no rules** and doesn't know the map. It learns from the 
 | rules | 10, some general | 14 used out of 702 created, all fully specific |
 
 Other findings from solution 2:
-- **Strength and return.** Once training settles, each rule's bid equals the return still to come, because the bucket brigade balances `bid = reward + next bid`. This has the same shape as the Bellman equation with γ = 1.
 - **8 random seeds:** every run wins, using 12 to 17 actions. The bucket brigade finds a good route, not always the shortest.
-- **No optimism** (new rules start at 0): the agent never wins. It learns to climb out at once, because the reward is too sparse and delayed to be found by chance.
-
-## Files
-
-| File | Content |
-|---|---|
-| [`wumpus_1_hardcoded.ipynb`](wumpus_1_hardcoded.ipynb) | solution 1: hand-written rules |
-| [`wumpus_2_learned.ipynb`](wumpus_2_learned.ipynb) | solution 2: Learning Classifier System with the bucket brigade |
-| [`slides.pdf`](slides.pdf) | slides used in the video |
-
-## How to run
-
-Requires Python 3 and `matplotlib`. Each notebook is self-contained and runs in a few seconds.
-
-```bash
-pip install matplotlib
-jupyter notebook wumpus_1_hardcoded.ipynb
-jupyter notebook wumpus_2_learned.ipynb
-```
