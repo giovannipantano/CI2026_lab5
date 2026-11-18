@@ -4,7 +4,7 @@ Computational Intelligence · Politecnico di Torino · Giovannni Pantano (s36224
 
 ## 🎥 Video presentation
 
-**[Watch the video on Google Drive](https://drive.google.com/PASTE-YOUR-LINK-HERE)**
+**[Watch the video on Google Drive](https://drive.google.com/file/d/1rfFpbhr_wItYziyeEdaEdLmFsQ0xKGYm/view?usp=sharing)**
 
 ## The problem
 
